@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/guland/[...path].js": {
+      "runtime": "edge"
+    }
+  },
+  "rewrites": [
+    { "source": "/proxy/:path*", "destination": "/api/guland/:path*" }
+  ]
+}
